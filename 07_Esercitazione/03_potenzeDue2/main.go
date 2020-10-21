@@ -9,14 +9,10 @@ func main() {
 	fmt.Print("Inserisci il numero di potenze di due che vuoi stampare: ")
 	fmt.Scan(&n)
 
-	p = 2
+	p = 1
 
-	for i := 0; i <= n - 1; {
-		if i == 0 {
-			p = 1
-		}
+	for p <= n {
+		fmt.Println(p)
 		p *= 2	
-		fmt.Println(i + 1, "-", p)
-		i++
 	} 
 }
