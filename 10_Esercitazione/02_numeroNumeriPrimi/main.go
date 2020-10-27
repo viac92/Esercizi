@@ -2,31 +2,42 @@
 
 package main
 
-import "fmt"
+import ("fmt"
+		"math"
+)
 
 func main() {
-	var n int 
+	var n int
 	fmt.Print("Inserisci un numero: ")
 	fmt.Scan(&n)
-	
-	if n < 2 {
-		fmt.Println("Valore non valido.")
-		return
-	}
 
-	var flag bool
-	var numeroPrimi int
+	var numCorrente int = n
+	var trovaPrimi int = 2
+	var contaPrimi int
 
-	for i := 0; i < n; i++ {
-		var k int
-		k = 2
-		if n % k == 0 {
-			break
+	for cicliNum := 0; cicliNum < n; cicliNum++ {
+//		fmt.Println("Numero corrente", numCorrente)
+		
+		for trovaPrimi < numCorrente {
+//			fmt.Println(trovaPrimi)
+			if numCorrente % trovaPrimi == 0 {
+				break 
+			}
+			trovaPrimi++
 		}
+		if  trovaPrimi == numCorrente {
+//			fmt.Print(trovaPrimi, " = ", numCorrente, "\n")
+			contaPrimi++
+//			fmt.Println("Entrato")
+		}
+		trovaPrimi = 2
+		numCorrente--
+
 	}
 
-	if flag {
-		numeroPrimi++
-	}
-	fmt.Println(numeroPrimi)
+	fmt.Println("I numeri primi <=", n, "sono:", contaPrimi)
+	var confronto float64 = float64(n)/math.Log(float64(n))
+	fmt.Println("Funzione da confrontare: ", confronto)
+	fmt.Println("Rapporto:", float64(contaPrimi)/confronto)
+
 }
