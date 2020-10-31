@@ -8,6 +8,6 @@ Esercizi:
 	  dopo ogni riga stampare quante "a" conteneva.
 	  	. Alla fine stampare la media di tutte le "a" per riga.
 	
-	3 Data una stringa ASCII, stampare tutto ciò che compare prima della prima '/'
+	3 Data una stringa ASCII, stampare tutto ciò che compare prima della prima '/' OK
 
 

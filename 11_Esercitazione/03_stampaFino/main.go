@@ -17,6 +17,9 @@ func main() {
 
 	for _, x := range s {
 		fmt.Print(string(x))
+		if x == 47 {
+			break
+		}
 	}
 	fmt.Println()
 }
