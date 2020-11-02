@@ -1,6 +1,10 @@
-Esercizi 19/10/2020
+1 Sistemare il programma dell'epoca in modo che restituisca valori negativi se prima del 1970. OK
+2 Scrivere un programma che dato n calcola il numero di numeri primi minori o uguali a n. Usarlo per verificare sperimentalmente che questo P(n) è asintotico per log di p(n) n/logn OK
+3 Dato n stapare i primi n numeri primi OK
+4 Disegnare il triangolo bucato OK				
 
-1	Calcola la somma dei primi n. quadrat n quadrati 1^n, 2^n ecc OK
-2	Stamnpa le potenze di due minori o uguali a n OK
-3	stampa le prime n potenze di 2 OK
-4	Stampa un conto alla rovescia partendo da un numero n OK
+*****
+*  *
+* *
+*
+									
