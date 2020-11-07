@@ -24,7 +24,7 @@ func spazi(n int) string {
 	var out string
 	for i := 0; i < n; i++ {
 		out += " "
-		} 
+	} 
 	return out
 }
 
