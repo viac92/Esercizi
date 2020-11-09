@@ -5,6 +5,9 @@ package main
 
 import (
 	"fmt"
+	"bufio"
+	"os"
+	"strconv"
 )
 
 
@@ -22,16 +25,30 @@ func ruotaStringa(n int, s string) (string) {
 }
 
 func main() {
-	var n int
 	var s string
 
-	fmt.Print("Inserisci una parola: ")
-	fmt.Scan(&s)
-	fmt.Print("Inserisci un numero: ")
-	fmt.Scan(&n)
 
-	newS := ruotaStringa(n, s)
+	b := bufio.NewScanner(os.Stdin)
 
-	fmt.Println(newS)
-	
+	fmt.Print("Inserisci una stringa: ")
+	for b.Scan() {
+		s = b.Text()
+		fmt.Print("Inserisci un numero: ")
+		
+		for b.Scan() {
+			sn := b.Text()
+			n, err := strconv.Atoi(sn)
+
+			if err != nil || n > len(s) || n < 0 {
+				fmt.Println("Errore --- ripeti inserimento:")
+				break
+			} 
+			
+			newS := ruotaStringa(n, s)
+
+			fmt.Println("---->", newS)
+			break
+		}
+		fmt.Print("Inserisci una stringa: ")
+	}	
 }
