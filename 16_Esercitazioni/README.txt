@@ -5,7 +5,7 @@ Esercizi
     17
     ./calc 13 / 6
     2.1
-    operatori +, -, x, / OK
+    operatori +, -, x, / OKll
 
 2 - Scrivere un programma che riceva come argomenti due date e stampi il numero di giorni pasati
     ./dist 2/1/1956 2/1/1934
