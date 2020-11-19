@@ -34,8 +34,7 @@ func dataToString(d data) string {
 }
 
 func distData(d1 data, d2 data) int {
-
-
+	
 }
 
 
