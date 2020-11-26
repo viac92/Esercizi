@@ -25,6 +25,6 @@ func main() {
 	}
 
 	for i := 1; i < 100; i++ {
-		fmt.Println(fibonacci(i + 1)/fibonacci(i))
+		fmt.Println(float64(fibonacci(i + 1))/float64(fibonacci(i)))
 	}
 }
