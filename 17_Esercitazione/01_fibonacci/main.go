@@ -24,7 +24,7 @@ func main() {
 		fmt.Printf("%d\t%d\t%d\n", i, successiosneFibonacci[i], fibonacci(i))
 	}
 
-	for i := 1; i < 100; i++ {
+	for i := 1; i < 45; i++ {
 		fmt.Println(float64(fibonacci(i + 1))/float64(fibonacci(i)))
 	}
 }
