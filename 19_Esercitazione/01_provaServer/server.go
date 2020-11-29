@@ -7,7 +7,6 @@ import (
 	"log"
 	"math"
 	"net/http"
-
 	"github.com/holizz/terrapin"
 )
 
