@@ -2,11 +2,17 @@ package main
 
 import (
 	"fmt"
-	"net/http"
+	"image"
+	"image/png"
 	"log"
+	"math"
+	"net/http"
+
+	"github.com/holizz/terrapin"
 )
-func helloHendler(w http.ResponseWriter, r *http.Request) {
-	if r.URL.Path != "/hello" {
+
+func quadratoHendler(w http.ResponseWriter, r *http.Request) {
+	if r.URL.Path != "/quadrato.png" {
 		http.Error(w, "404 not found", http.StatusNotFound)
 		return
 	}
@@ -16,15 +22,20 @@ func helloHendler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Fprint(w, `	<!DOCTYPE html>
-					<h1>Hello!</h1>`)
+	i := image.NewRGBA(image.Rect(0, 0, 700, 700))
+	t := terrapin.NewTerrapin(i, terrapin.Position{300.0, 400.0})
+	for i := 0; i < 4; i++ {
+		t.Forward(300)
+		t.Left(math.Pi / 2)
+	}
+	png.Encode(w, i)
 }
 
 func main() {
 	fileServer := http.FileServer(http.Dir("./static"))
 	http.Handle("/", fileServer)
-	http.HandleFunc("/hello", helloHendler)
-	
+	http.HandleFunc("/quadrato.png", quadratoHendler)
+
 	fmt.Print("Starting server port 8080\n")
 	if err := http.ListenAndServe(":8080", nil); err != nil {
 		log.Fatal(err)
