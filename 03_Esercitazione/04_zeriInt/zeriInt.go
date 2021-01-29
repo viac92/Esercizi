@@ -1,8 +1,11 @@
-// Stabilire se un numero intero contiene qualche zero nelle ultime 3 cifre a destra
+// Esercizio:
+// Stabilire se un numero intero contiene qualche zero nelle ultime 3 cifre a destra.
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var num1 int

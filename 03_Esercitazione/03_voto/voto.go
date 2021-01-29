@@ -1,10 +1,14 @@
-// Basandosi sull'anno di nascita stabilire se si può votare per la camera(18) o per il senato (25)
+// Esercizio.
+// Basandosi sull'anno di nascita stabilire se si può votare per la camera(18) o per il senato (25).
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
+
 	var annoNascita, oggi int
 	oggi = 2020
 	

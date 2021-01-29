@@ -1,13 +1,18 @@
-// Stabilire se un anno è bisestile
+// Esercizio: 
+// Stabilire se un anno è bisestile.
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var anno int
+
 	fmt.Print("Inserire un anno: ")
 	fmt.Scan(&anno)
+
 	if (anno % 100) % 4 == 0 {
 		fmt.Println(anno, "è un anno bisestile.")
 	} else {

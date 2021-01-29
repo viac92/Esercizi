@@ -1,4 +1,5 @@
-// Stabilire se le somme delle cifre di un numero di tre cifre è maggiore di 10 
+// Esercizio:
+// Stabilire se le somme delle cifre di un numero di tre cifre è maggiore di 10.
 
 package main
 
@@ -6,6 +7,7 @@ import "fmt"
 
 func main() {
 	var num1 int
+
 	fmt.Print("Inserisci un numero intero di 3 cifre: ")
 	fmt.Scan(&num1)
 
