@@ -1,8 +1,11 @@
-// numerare carte da poker 13x4 = 52, numerarle da 0 a 51. Scrivere un programma che legge un numero da 0 a 51 e stampa la carta corrispondente. con simbolo ASCII
+// Esercizio:
+// Numerare carte da poker 13x4 = 52, numerarle da 0 a 51. Scrivere un programma che legge un numero da 0 a 51 e stampa la carta corrispondente. con simbolo ASCII.
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // Seme dato un numero restituisce il seme 
 func Seme(n int) rune {

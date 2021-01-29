@@ -1,4 +1,5 @@
-// Leggere una riga e contare quante sono le parole (separati da spazi) [contare gli inizi di parola] 
+// Esercizio:
+// Leggere una riga e contare quante sono le parole (separati da spazi) [contare gli inizi di parola].
 
 package main
 
@@ -11,6 +12,7 @@ import (
 func main()  {
 	var contaParole int
 	var flag bool = true
+	
 	fmt.Print("Inserisci una frase ti dirò di quante parole è composta: ")
 	
 	b := bufio.NewScanner(os.Stdin)

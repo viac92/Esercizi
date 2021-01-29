@@ -1,12 +1,16 @@
-// estendere fino 999 
+// Esercizio:
+// Inserito un numero da 0 a 999 stampa il numero in lettere. 
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func  main()  {
 	var n int
 	var s string
+	
 	fmt.Print("Inserisci un numero da 0 a 999: ")
 	fmt.Scan(&n)
 
