@@ -1,11 +1,15 @@
-// Stampa le prime n potenze di 2
+// Esercizio:
+// Stampa le prime n potenze di 2.
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var n, p int
+	
 	fmt.Print("Inserisci il numero di potenze di due che vuoi stampare: ")
 	fmt.Scan(&n)
 

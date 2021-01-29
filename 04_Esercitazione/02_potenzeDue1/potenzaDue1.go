@@ -1,8 +1,11 @@
-// Stampare le potenze di due minori o uguali a n  
+// Esercizio: 
+// Stampare le potenze di due minori o uguali a n.
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var n, p, p2 int

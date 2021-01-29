@@ -1,11 +1,15 @@
-// Stampa un conto alla rovescia partendo da un numero n
+// Esercizio:
+// Stampa un conto alla rovescia partendo da un numero n.
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var n int
+
 	fmt.Print("Inserisci il numero di partenza per il conto alla rovescia: ")
 	fmt.Scan(&n)
 
