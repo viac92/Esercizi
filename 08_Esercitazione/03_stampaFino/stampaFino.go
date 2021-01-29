@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 3
 // Data una stringa ASCII, stampare tutto ciò che compare prima della prima '/'.
 
 package main

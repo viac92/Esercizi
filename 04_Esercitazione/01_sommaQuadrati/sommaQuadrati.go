@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 1
 // Calcola la somma dei primi n. quadrati 1^n, 2^n ecc.
 
 package main

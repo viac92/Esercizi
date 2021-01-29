@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 2
 // Scrivere un programma per stampare un tirangolo di asterischi.
 // usando due funzioni per spazi ed asterischi.
 //

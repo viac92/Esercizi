@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 4
 // Stabilire se un numero intero contiene qualche zero nelle ultime 3 cifre a destra.
 
 package main

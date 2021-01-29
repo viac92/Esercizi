@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 1
 // dato n stampare un triangolo nell'altra direzione 
 // ****
 //  ***

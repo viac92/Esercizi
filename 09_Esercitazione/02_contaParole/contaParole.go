@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 2
 // Leggere una riga e contare quante sono le parole (separati da spazi) [contare gli inizi di parola].
 
 package main

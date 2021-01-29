@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 1
 // Inserito un numero da 0 a 999 stampa il numero in lettere. 
 
 package main

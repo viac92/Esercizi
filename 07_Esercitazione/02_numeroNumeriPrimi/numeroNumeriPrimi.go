@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 2
 // Dato n calcola il numero di numeri primi minori o uguali a n. Usarlo per verificare sperimentalmente che questo P(n) è asintoti.
 
 package main

@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 2
 // Stabilire se le somme delle cifre di un numero di tre cifre è maggiore di 10.
 
 package main

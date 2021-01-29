@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 3
 // Dato n stapare i primi n numeri primi.
 
 package main

@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 7
 // Dato un numero capire se finisce per tre.
 
 package main

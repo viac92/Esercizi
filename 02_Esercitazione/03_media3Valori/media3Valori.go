@@ -1,4 +1,4 @@
-// Esercizio
+// Esercizio: 3
 // Fare programma che calcola la media di tre valori letti in ingresso
 
 package main

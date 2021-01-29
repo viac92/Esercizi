@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 3
 // Stampa le prime n potenze di 2.
 
 package main

@@ -1,5 +1,6 @@
+// Esercizio: 1
 // Un primo di Mersenne è un numero primo della forma 2^x - 1. 
-// scrivereun programma che stampi i primi n numeri di Mersenne. 
+// Scrivereun programma che stampi i primi n numeri di Mersenne. 
 
 package main
 
@@ -8,16 +9,19 @@ import (
 	"math"
 )
 
-// dato un n restituisce l'n-esimo numero primo
+// numPrimi dato un n restituisce l'n-esimo numero primo
 func numPrimi(n int) int {
 	var numero int = 2
 	var index int
 	var contaPrimi int	
+	
 	//ciclo per numeri primi
 	for {
+		
 		//ciclo per successione numeri
 		for {
 			index = 2
+			
 			//ciclo per verifica numero primo
 			for index < numero {
 				if numero % index == 0 {
@@ -29,6 +33,7 @@ func numPrimi(n int) int {
 				
 				break
 			}
+
 			numero++
 		} 
 
@@ -38,17 +43,19 @@ func numPrimi(n int) int {
 		}
 		numero++
 	}
+
 	return numero
 }
 
+// numMersenne dato n restituisce i primi n numeri di Mersenne
 func numMersenne(n int) {
 	m := math.Pow(2, float64(numPrimi(n))) - 1
 	fmt.Println(m)
-
 }
 
 func main() {
 	var n int
+	
 	fmt.Print("Inserisci un numero: ")
 	fmt.Scan(&n)
 

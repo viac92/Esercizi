@@ -1,4 +1,4 @@
-// Esercizio: 
+// Esercizio: 2
 // Stampare le potenze di due minori o uguali a n.
 
 package main

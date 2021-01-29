@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 1
 // Scrivere una funzione isPrime che dice se un numero è primo.
 
 package main

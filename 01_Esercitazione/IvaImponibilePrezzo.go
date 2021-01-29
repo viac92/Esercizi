@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 1
 // Data una certa data calcolare quanti giorni mancano al primo gennaio e quanti giorni mancano a natale facendo finta che tutti i mesi siano di 30 giorni.
 
 package main

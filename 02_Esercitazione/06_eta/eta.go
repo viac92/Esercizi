@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 6
 // Inserire due età e valutare chi è più grande.
 
 package main

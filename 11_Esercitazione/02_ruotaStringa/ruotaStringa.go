@@ -1,5 +1,8 @@
+// Esercizio: 2
 // Scrivere una funzione che data una stringa e un intero ruoti la stringa di quel 
-// numero di posizioni. es Tappeto, 3 -> petoTap.
+// numero di posizioni. 
+// Es
+// Tappeto, 3 -> petoTap.
 
 package main
 
@@ -11,7 +14,7 @@ import (
 )
 
 
-// dato n scambia le prime n lettere posizionandole alla fine della parola 
+// ruotaStringa dato n scambia le prime n lettere posizionandole alla fine della parola 
 func ruotaStringa(n int, s string) (string) {
 	var prefix, second string
 	for i, char := range s {				
@@ -26,8 +29,6 @@ func ruotaStringa(n int, s string) (string) {
 
 func main() {
 	var s string
-
-
 	b := bufio.NewScanner(os.Stdin)
 
 	fmt.Print("Inserisci una stringa: ")

@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 3
 // Numerare carte da poker 13x4 = 52, numerarle da 0 a 51. Scrivere un programma che legge un numero da 0 a 51 e stampa la carta corrispondente. con simbolo ASCII.
 
 package main

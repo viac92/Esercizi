@@ -1,4 +1,4 @@
-// Esercizio: 
+// Esercizio: 1
 // Leggere una stringa e stampare quante "a" contiene.
 
 package main

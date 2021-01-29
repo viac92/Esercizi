@@ -1,4 +1,4 @@
-// Esercizio:
+// Esercizio: 3
 // Come programma 2 con una singola funzione stampaRiga (che prende due parametri).
 
 package main

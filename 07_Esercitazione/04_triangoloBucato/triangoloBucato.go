@@ -1,4 +1,4 @@
-// Esercizio: 
+// Esercizio: 4
 // Disegnare il triangolo bucato.
 // *****
 // *  *

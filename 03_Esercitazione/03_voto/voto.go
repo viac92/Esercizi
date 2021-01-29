@@ -1,4 +1,4 @@
-// Esercizio.
+// Esercizio: 3
 // Basandosi sull'anno di nascita stabilire se si può votare per la camera(18) o per il senato (25).
 
 package main
