@@ -9,13 +9,15 @@ import (
 
 
 // divRest restituisce tramite puntatori in quo e rest il quoziente e il resto di q/d
-func divRest(q, d, quo, rest *int) {
-	*quo = *q / *d
-	*rest = *q % *d	
+func divRest(q, d *int) {
+	quo := *q / *d
+	rest := *q % *d	
+	*q = quo
+	*d = rest
 }
 
 func main()  {
-	var q, d, quo, rest int
+	var q, d int
 
 	fmt.Print("Inserisci il primo numero: ")
 	fmt.Scan(&q)
@@ -23,6 +25,6 @@ func main()  {
 	fmt.Scan(&d)
 	
 
-	divRest(&q, &d, &quo, &rest)
-	fmt.Println(quo, rest)
+	divRest(&q, &d)
+	fmt.Println(q, d)
 }
