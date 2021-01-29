@@ -1,11 +1,15 @@
-// inserire due età e valutare chi è più grande
+// Esercizio:
+// Inserire due età e valutare chi è più grande.
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var piero, luigi int
+
 	fmt.Print("Inserire l'età di Piero: ")
 	fmt.Scan(&piero)
 	fmt.Print("Inserisci l'età di Luigi: ")

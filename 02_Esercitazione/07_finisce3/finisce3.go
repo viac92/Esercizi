@@ -1,11 +1,15 @@
-// dato un numero capire se finisce per tre
+// Esercizio:
+// Dato un numero capire se finisce per tre.
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var num1 int
+	
 	fmt.Print("Inserire un numero: ")
 	fmt.Scan(&num1)
 

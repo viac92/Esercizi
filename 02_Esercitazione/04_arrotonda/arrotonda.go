@@ -1,4 +1,5 @@
-// Fare programma Dato un numero stamparlo arrotondato all'intero
+// Esercizio:
+// Dato un numero stamparlo arrotondato all'intero.
 
 package main
 
@@ -7,8 +8,8 @@ import ("fmt"
 )
 
 func main() {
-	
 	var num1, intNum, dec float64
+	
 	fmt.Print("Inserire un numero con la virgola: ")
 	fmt.Scan(&num1)
 	intNum = math.Floor(num1)
