@@ -1,16 +1,22 @@
-// Scrivere un programma per 
+// Esercizio:
+// Scrivere un programma per stampare un tirangolo di asterischi.
+// usando due funzioni per spazi ed asterischi.
+//
+// Es
 // ******
 //  *****
 //   ****
 //    ***
 //     **
-//      * usando due funzioni per spazi ed asterischi
+//      * 
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-// la funzione dato n in input restituisce n *
+// asterischi dato n in input restituisce n *
 func asterischi(n int, num int) string {
 	var out string
 		for i := 0; i < num - n; i++ {
@@ -19,7 +25,7 @@ func asterischi(n int, num int) string {
 	return out
 }
 
-// la funzione dato n restituisce spazi 0, 1
+// spazi dato n restituisce spazi 0, 1
 func spazi(n int) string {
 	var out string
 	for i := 0; i < n; i++ {
@@ -31,6 +37,7 @@ func spazi(n int) string {
 
 func main() {
 	var n int
+	
 	fmt.Print("Inserisci un numero: ")
 
 	fmt.Scan(&n)

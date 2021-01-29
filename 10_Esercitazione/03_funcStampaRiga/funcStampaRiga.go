@@ -1,4 +1,5 @@
-// Come programma 3 con una singola funzione stampaRiga (che prende due parametri)
+// Esercizio:
+// Come programma 2 con una singola funzione stampaRiga (che prende due parametri).
 
 package main
 
@@ -7,7 +8,7 @@ import (
 		"io"
 )
 
-// la funzione dato n in input restituisce n *
+// asterischi dato n in input restituisce n *
 func asterischi(n int) string {
 	var out string
 		for i := 0; i < n; i++ {
@@ -16,7 +17,7 @@ func asterischi(n int) string {
 	return out
 }
 
-// la funzione dato n restituisce spazi 0, 1
+// spazi dato n restituisce spazi 0, 1
 func spazi(n int) string {
 	var out string
 	for i := 0; i < n; i++ {
@@ -25,7 +26,7 @@ func spazi(n int) string {
 	return out
 }
 
-// dati due input s e a stampa s spazi e a asterischi 
+// stampaRiga dati due input s e a stampa s spazi e a asterischi 
 func stampaRiga(s int, a int) {
 	fmt.Print(spazi(s) + asterischi(a) + "\n")
 }
