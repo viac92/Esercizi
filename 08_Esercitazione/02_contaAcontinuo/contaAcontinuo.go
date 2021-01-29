@@ -1,7 +1,7 @@
-/* 		Come programma 1 ma ora il programma chiede di inserire continuamente una nuova linea
-		dopo ogni riga stamoare quante "a" conteneva.
-	  		. Alla fine stampare la media di tutte le "a" per riga. 
-*/
+// Esercizio:
+// Come programma 1 ma ora il programma chiede di inserire continuamente una nuova linea
+// dopo ogni riga stampare quante "a" conteneva, alla fine stampare la media di tutte le "a" per riga.
+
 
 package main
 
@@ -13,9 +13,9 @@ import (
 
 func main() {
 	b := bufio.NewScanner(os.Stdin)
-
 	var contaAtotali, contaAparziali, righeTot int
 	var media float64
+	
 	for {
 		fmt.Print("Inserisci una stringa (scrivi exit per uscire): ")
 		

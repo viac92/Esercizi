@@ -1,4 +1,5 @@
-// Data una stringa ASCII, stampare tutto ciò che compare prima della prima '/'
+// Esercizio:
+// Data una stringa ASCII, stampare tutto ciò che compare prima della prima '/'.
 
 package main
 
@@ -12,6 +13,7 @@ func main() {
 	fmt.Print("Inserisci una stringa: ")
 	
 	b := bufio.NewScanner(os.Stdin)
+	
 	b.Scan()
 	s := b.Text()
 

@@ -1,7 +1,5 @@
-/* Leggere una stringa e stampare quante "a" contiene
-		. Caso ASCII
-		. Caso Generale
-*/
+// Esercizio: 
+// Leggere una stringa e stampare quante "a" contiene.
 
 package main
 
