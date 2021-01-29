@@ -1,12 +1,16 @@
-// dato un numero intero stabilire se il numero contiene la cifra 3 (usare i cicli e il break)
+// Esercizio
+// Dato un numero intero stabilire se il numero contiene la cifra 3 (usare i cicli e il break).
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var n int
 	var b bool
+
 	fmt.Print("Inserisci un numero troverò se è presente la cifra 3: ")
 	fmt.Scan(&n)
 
