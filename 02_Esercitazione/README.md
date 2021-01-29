@@ -1,5 +1,5 @@
-Esercizio | Richiest | Stato
---------- | -------- | -----
+Esercizio | Richiesta | Stato
+--------- | --------- | -----
 1 | Iva / imponibile / prezzo | Risolto
 2 | Dato un numero, stampare la parte frazionaria | Risolto  
 3 | Dato un numero stamparlo arrotondato all'intero | Risolto
