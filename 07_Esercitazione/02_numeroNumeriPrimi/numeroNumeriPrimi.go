@@ -1,13 +1,16 @@
-// 2 Scrivere un programma che dato n calcola il numero di numeri primi minori o uguali a n. Usarlo per verificare sperimentalmente che questo P(n) è asintoti
+// Esercizio:
+// Dato n calcola il numero di numeri primi minori o uguali a n. Usarlo per verificare sperimentalmente che questo P(n) è asintoti.
 
 package main
 
-import ("fmt"
-		"math"
+import (
+	"fmt"
+	"math"
 )
 
 func main() {
 	var n int
+	
 	fmt.Print("Inserisci un numero: ")
 	fmt.Scan(&n)
 
@@ -16,19 +19,15 @@ func main() {
 	var contaPrimi int
 
 	for cicliNum := 0; cicliNum < n; cicliNum++ {
-//		fmt.Println("Numero corrente", numCorrente)
 		
 		for trovaPrimi < numCorrente {
-//			fmt.Println(trovaPrimi)
 			if numCorrente % trovaPrimi == 0 {
 				break 
 			}
 			trovaPrimi++
 		}
 		if  trovaPrimi == numCorrente {
-//			fmt.Print(trovaPrimi, " = ", numCorrente, "\n")
 			contaPrimi++
-//			fmt.Println("Entrato")
 		}
 		trovaPrimi = 2
 		numCorrente--

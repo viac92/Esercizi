@@ -1,28 +1,30 @@
-/* Disegnare il triangolo bucato 
+// Esercizio: 
+// Disegnare il triangolo bucato.
+// *****
+// *  *
+// * *
+// *
 
-*****
-*  *
-* *
-*
-
-*/
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var n int 
+	
 	fmt.Print("Inserisci un numero: ")
 	fmt.Scan(&n)
-
-	for i := 0; i < n; i++ { 			// for delle righe 
-
+	
+	// ciclo per le righe
+	for i := 0; i < n; i++ { 		
 		if i == n - 1 {
 			fmt.Println("*")
 			break
 		}
-		
+
 		if i == 0 {
 			for in := 0; in < n; in++ {
 				fmt.Print("*")

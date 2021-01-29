@@ -1,12 +1,16 @@
+// Esercizio: 
 // Sistemare il programma dell'epoca in modo che restituisca valori negativi se prima del 1970.  
 
 package main
 
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var g, m, a int
+	
 	fmt.Print("Inserisci una data: ")
 	fmt.Scan(&g)
 	fmt.Scan(&m)
