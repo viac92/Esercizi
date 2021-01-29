@@ -1,12 +1,16 @@
+// Esercizio: 1
 // Scrivere una funzione che dati x e y restituisce 
 // divisione intera x/y e resto come due valori restituiti.
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
 
 func divisioneResto(num, div int) (quoz, rest int) {
-	return num / div, num & div
+	return num / div, num % div
 }
 
 func main()  {
