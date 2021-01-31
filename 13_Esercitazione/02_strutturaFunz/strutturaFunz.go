@@ -1,10 +1,6 @@
-// Scrivere una funzione che prenda tre 
-// - argomenti un puntatore a una data
-// - una stringa s
-// - un intero x
-//
-// la funzione deve modificare uno dei tre campi della data 
-// (il giorno se s = g, il mese se s = "m") ponendolo uguale a x.
+// Esercizio: 2
+// Scrivere una funzione che prenda tre: argomenti un puntatore a una data, una stringa s e un intero x.
+// La funzione deve modificare uno dei tre campi della data (il giorno se s = g, il mese se s = "m") ponendolo uguale a x.
 
 package main
 
@@ -13,10 +9,12 @@ import (
 	"strconv"
 )
 
+// data memorizza una data dell'anno
 type data struct {
 	g, m, a int
 }
 
+// setData modifica il valore di un parametro di una data puntata
 func setData(d *data, s string, x int) {
 	switch s {
 	case "g":
@@ -28,6 +26,7 @@ func setData(d *data, s string, x int) {
 	}
 }
 
+// stringa stampa un tipo data in formato string
 func stringa(d data) string {
 	return strconv.Itoa(d.g) + "/" + strconv.Itoa(d.m) + "/" + strconv.Itoa(d.a)
 }
@@ -37,6 +36,7 @@ func main()  {
 	var n int
 	var d data
 
+	// Menu
 	fmt.Println("Modifica la data")
 	fmt.Print("Inserisci:\n- g per modigicare il giorno\n- m per modificare il mese\n- a per modificare l'anno\n- q per uscire\n-->")
 	for {
@@ -51,8 +51,10 @@ func main()  {
 			fmt.Print("Inserisci un valore valido: ")
 		}
 		
+		// inserimento per modifica
 		fmt.Print("Inserisci la modifica al numero: ")
 		
+		// inserisco la modifica
 		loop: for {
 			fmt.Scan(&n)
 			
