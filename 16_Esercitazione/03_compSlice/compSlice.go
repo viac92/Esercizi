@@ -1,3 +1,4 @@
+// Esercizio: 3
 // Scivere una funzione che date due slice stabilisce se sono uguali. (Stessa lunghezza e stesso contenuto.)
 
 package main
@@ -8,6 +9,7 @@ import (
 	"bufio"
 )
 
+// confrontaSlice confronta due slice restituisce true se sono uguali false altrimenti
 func confrontaSlice(sl1 []string, sl2 []string) bool {
 	if len(sl1) != len(sl2) {
 		return false

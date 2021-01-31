@@ -1,5 +1,7 @@
+// Esercizio: 2
 // Scrivere un programma che riceva come argomenti due date e stampi il numero di giorni passati
-//     ./dist 2/1/1956 2/1/1934
+// Es
+// ./dist 2/1/1956 2/1/1934
 
 package main
 
@@ -15,6 +17,7 @@ type Data struct {
 	g, m, a int
 }
 
+// stringToData converte una stringa nel formato coorretto in una Data
 func stringToData(str string) Data {
 	var dataOut Data
 
@@ -28,6 +31,7 @@ func stringToData(str string) Data {
 	return dataOut 
 }
 
+// giorniMese restituisce quanti giorni ha un mese di un dato anno
 func giorniMese(m int, a int) int {
 	switch m {
 	case 4, 6, 8, 9, 11:
@@ -43,6 +47,7 @@ func giorniMese(m int, a int) int {
 	}
 }
 
+// distData restituisce la distanza in giorni tra due date
 func distData(data1, data2 Data) int {
 	var giorniOut int
 	for  i := data1.a; i < data2.a; i++ {

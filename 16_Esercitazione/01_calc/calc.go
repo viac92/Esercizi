@@ -1,4 +1,6 @@
+// Esercizio: 1
 // Scrivere un programma calc.go che chiamato da console restituisca le seguenti operazioni
+// Es
 // ./calc 12 + 5
 // 17
 // ./calc 13 / 6
@@ -13,6 +15,7 @@ import (
 	"strconv"
 )
 
+// calc stabilisce quale operazione eseguire e la esegue, restituisce 0 e false se l'operazione non è permessa
 func calc(op string, n1 int, n2 int) (int, bool) {
 	switch op {
 	case "+":

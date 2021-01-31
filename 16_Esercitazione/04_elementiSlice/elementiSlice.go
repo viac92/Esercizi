@@ -1,3 +1,4 @@
+// Esercizio: 4
 // Scrivere una funzione che date due slice x e y trova quanti elementi di x compaiono in y.
 
 package main
@@ -9,6 +10,7 @@ import (
 	"sort"
 )
 
+// comparaElementiXinY conta quante ripetizioni ci sono in una slice di stringhe, restituisce una slice di int ordianata
 func compareElementXinY(x, y []string) []int {
 	var contaElementiOut []int
 	var count int
@@ -25,7 +27,7 @@ func compareElementXinY(x, y []string) []int {
 	return contaElementiOut
 }
 
-
+// sliceElementToCompare restituisce una stringa di elementi presi una sola volta
 func sliceElementToCompare(x []string) []string {
 	var sliceOut []string
 
