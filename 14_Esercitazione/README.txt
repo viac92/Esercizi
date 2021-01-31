@@ -1,1 +1,0 @@
-1 Scrivere un programma che legge le altezze e calcola e stampa media, varianza e scarto quadtratico. OK

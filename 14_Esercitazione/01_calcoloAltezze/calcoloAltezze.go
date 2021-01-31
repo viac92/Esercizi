@@ -1,4 +1,5 @@
-// 1 Scrivere un programma che legge le altezze e calcola e stampa media, varianza e scarto quadtratico.
+// Esercizio: 1
+// Scrivere un programma che legge le altezze e calcola e stampa media, varianza e scarto quadtratico.
 
 package main
 
@@ -7,6 +8,7 @@ import	(
 	"math"
 )
 
+// media calcola la media
 func media(altezze [100]int, n int) int {
 	var somma int
 	for i := 0; i < 100; i++ {
@@ -15,6 +17,7 @@ func media(altezze [100]int, n int) int {
 	return somma / n
 }
 
+// varianza calcola la varianza
 func varianza(altezze [100]int, media int, n int) float64 {
 	var scarto float64
 	for i := 0; i < n; i++ {
