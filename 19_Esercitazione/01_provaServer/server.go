@@ -1,3 +1,6 @@
+// Esercizio: 1
+// Creare un server locale che disegna mediante turtle drawing un'immagine di frattali
+
 package main
 
 import (

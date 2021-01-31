@@ -1,11 +1,14 @@
+// Esercizio: 1
 // Scrivere un programma con una funzione ricorsiva che calcoli gli n numeri di fibonacci.
+// Usare la funzione per stampare il lim(n->inf) Phi(n+1)/Phi(n)
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-
-
+// fibonacci restituisce x numeri di fibonacci
 func fibonacci(x int) int {
 	if x == 0 {
 		return 0

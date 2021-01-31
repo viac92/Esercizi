@@ -1,8 +1,7 @@
-//	Implementare il gioco mastermind: data una stringa di parole non conosciuta
-//	il giocatore tenta di indovinare, viene fornito il numero di lettere giuste ma al posto sbagliato 
-//	e il numero di lettere giuste al posto giusto.
-
-//	Implementare sia dal punto di vista del generatore che dal giocatore.
+// Esercizio: 1
+// Implementare il gioco mastermind: data una stringa di parole non conosciuta il giocatore tenta di indovinare, 
+// viene fornito il numero di lettere giuste ma al posto sbagliato e il numero di lettere giuste al posto giusto.
+// Implementare sia dal punto di vista del generatore che dal giocatore.
 
 package main
 
@@ -14,6 +13,7 @@ import (
 
 const lenString int = 5
 
+// creaParole crea una stringa casuale
 func creaParole() string {
 	var r rune
 	var lenStringGenerata string
@@ -26,7 +26,7 @@ func creaParole() string {
 	return lenStringGenerata
 }
 
-
+// letterePosizioneCorretta restituisce lettere nella posizione corretta e lettere presenti ma non nella posizione corretta
 func letterePosizioneCorretta(str1, str2 string) (int, int) {
 	var subSli1, subSli2 []rune
 	r1 := []rune(str1)
